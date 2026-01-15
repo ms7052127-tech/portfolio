@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <div class="profile">
+    <img src="profile.jpg">
+    <h2>Mohit Singh</h2>
+  </div>
+
+  <div class="social">
+    <a href="https://github.com/ms7052127-tech" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/mohitthakur956?igsh=MTUzaGI2cTI4YXc1ag==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/qr/S22YM5BD4MFHD1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/in/mohit-singh-45945a328" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+  <ul class="menu">
+    <li onclick="scrollToSection('home')" class="active"><i class="fas fa-home"></i>Home</li>
+    <li onclick="scrollToSection('about')"><i class="fas fa-user"></i>About</li>
+    <li onclick="scrollToSection('skills')"><i class="fas fa-lightbulb"></i>Skills</li>
+    <li onclick="scrollToSection('projects')"><i class="fas fa-star"></i>Projects</li>
+    <li onclick="scrollToSection('contact')"><i class="fas fa-envelope"></i>Contact</li>
+  </ul>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+<!-- Home -->
+<section class="hero" id="home">
+  <div class="overlay">
+    <h1>Mohit Singh</h1>
+    <h3>I'm <span id="type"></span></h3>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+<h2>About Me</h2>
+<p>
+My name is Mohit Singh, aspiring full stack web Developer.
+I'm dedicated to mastering these technologies and 
+building innovative web applications that provide seamless user experiences.
+Thank you for visiting my portfolio. Feel free to explore my projects and get in touch.<br><br> 
+</p>
+<h2 class="section-1">Web Developer</h2>
+
+<p><b>Birthday</b>: 27 March 2001 <span style="margin-left: 351px;"><strong>Age</strong>: 24</span></p><br>
+<p><b>Phone</b>:7452011387  <span style="margin-left: 390px;"><strong>Degree</strong>: Pursuing MCA</span></p><br>
+<p><b>City</b>: Agra,Uttar Pradesh <span style="margin-left: 357px;"><strong>Email</strong>: ms7052127@gmail.com</span></p>
+<br>
+<br>
+
+<p>I am from Agra and currently pursuing an MCA from Raja Balwant singh
+   technical and Management Campus,Which is affilated with AKTU university.
+  I completed my Graducation with a B.Sc in Mathematics from Agra University.<br><br>
+  I have a passion for web development and i enjoy working with JavaScript
+  ,reactjs, Nodejs and MySQL database. I am always eager to learn new technologies and improve my skills.
+  I am a team player and I enjoy collaborating with others to create innovative solutions.
+  </p>
+
+
+
+</section>
+
+<!-- Skills -->
+<!-- <section class="section" id="skills">
+<h2>My Skills</h2>
+<div class="skills">
+  <div>HTML</div>
+  <div>CSS</div>
+  <div>JavaScript</div>
+  <div>React</div>
+  <div>Git</div>
+</div>
+</section> -->
+
+
+
+
+<!-- <section class="skills-section" id="skills"> -->
+  <section class="section" id="skills">
+
+
+  <h2 class="title">My Skills</h2>
+
+  <div class="skills-grid">
+
+    <!-- Skill Card -->
+    <div class="skill-card">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="w-16 h-16 mb-4">
+      
+      <!-- <img src="react.png" alt="React"> -->
+      <h3>React JS</h3>
+
+      <div class="dots">
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node" class="w-16 h-16 mb-4">
+      <!-- <img src="node.png" alt="Node"> -->
+      <h3>Node JS</h3>
+
+      <div class="dots">
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL" class="w-16 h-16 mb-4">
+   
+      <!-- <img src="mysql.png" alt="MySQL"> -->
+      <h3>MySQL</h3>
+
+      <div class="dots">
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" 
+     alt="AI Tool" 
+     class="w-16 h-16 mb-4">
+
+      <!-- <img src="ai.png" alt="AI"> -->
+      <h3>AI Tools</h3>
+
+      <div class="dots">
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" 
+     alt="GitHub" 
+     class="w-16 h-16 mb-4">
+
+      <!-- <img src="github.png" alt="GitHub"> -->
+      <h3>Github</h3>
+
+      <div class="dots">
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+  
+     <img src="https://seeklogo.com/images/C/canva-logo-B4BE25729A-seeklogo.com.png" 
+     alt="Canva" 
+     class="w-16 h-16 mb-4">
+
+      <!-- <img src="canva.png" alt="Canva"> -->
+      <h3>Canva</h3>
+
+      <div class="dots">
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+<!-- Projects -->
+<section class="section" id="projects">
+<h2>Projects</h2>
+<div class="projects">
+  <div class="card">
+              <img src="pro.png" alt="tour">
+
+    <h3>Portfolio Website</h3>
+    <p>Personal portfolio using HTML CSS JS</p>
+  </div>
+  <div class="card">
+          <img src="tour.png" alt="tour">
+
+    <h3>Tour and Travels Website</h3>
+    <p>Travel website with booking features</p>
+  </div>
+  <div class="card">
+              <img src="algo.png" alt="tour">
+
+    <h3>Algorithm Visualization</h3>
+    <p>Interactive visualization of algorithms</p>
+  </div>
+</div>
+</section>
+ 
+
+
+
+
+
+
+
+
+
+
+<section class="contact-section" id="contact">
+
+  <h2 class="title">Contact Me</h2>
+
+  <div class="contact-wrapper">
+
+    <!-- Form -->
+    <form class="contact-form"
+      action="https://formspree.io/f/xbddlpkl"
+      method="POST">
+      <div class="row">
+        <div class="input-group">
+          <label>Name *</label>
+          <input type="text" name="name" required>
+
+          <!-- <input type="text" required> -->
+        </div>
+
+        <div class="input-group">
+          <label>Phone *</label>
+          <input type="number" name="number" required>
+        </div>
+      </div>
+
+      <div class="input-group full">
+        <label>Email *</label>
+        <input type="email" name="email" required>
+
+        <!-- <input type="email" required> -->
+      </div>
+
+      <div class="input-group full">
+        <label>Message *</label>
+        <textarea name="message"  required></textarea>
+      </div>
+
+      <button class="send-btn">Send Now</button>
+
+    </form>
+
+    <!-- Right Info -->
+    <div class="contact-info">
+
+      <p><a href="https://github.com/ms7052127-tech" target="_blank">Github</p></a>
+     <p><a href="https://www.linkedin.com/in/mohit-singh-45945a328" target="_blank">LinkedIn</p></a>
+     <p><a href="https://wa.me/qr/S22YM5BD4MFHD1" target="_blank"> <p>Whatsapp</a>
+
+      <div class="details">
+        <span>ms7052127@gmail.com</span>
+        <span>91-7452011387</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p>
+      © <span id="year"></span> Mohit Singh. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+
+<!-- Contact -->
+<!-- <section class="section" id="contact">
+<h2>Contact Me</h2>
+
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Email">
+<textarea placeholder="Message"></textarea>
+<button>Send Message</button>
+</form>
+
+</section> -->
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
