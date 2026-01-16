@@ -573,3 +573,27 @@ textarea{
   transition: 0.3s;
 }
 
+/* ===== MOBILE FIX FOR HERO SECTION ===== */
+
+@media (max-width: 768px) {
+
+  /* Hero height mobile ke liye fix */
+  .hero {
+    height: auto;
+    min-height: auto;
+  }
+
+  /* Overlay ko content ke hisaab se set karo */
+  .overlay {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  /* About section ko hero ke baad properly lane ke liye */
+  #about {
+    margin-top: 0;
+  }
+}
+
+
